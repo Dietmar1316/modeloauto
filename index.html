@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>La Asociación Automotriz del Perú publicó su<br>
+            informe anual sobre el sector automotor. Según el<br>
+            documento, se registraron 151.062 ventas en 2024,<br>
+            que implicó un retroceso de -8,2% frente a lo<br>
+            logrado en 2023. El informe también muestra la<br>
+            lista de marcas de autos más vendidas en el Perú,<br>
+            siendo Toyota la líder indiscutible con 32.495<br>
+            ventas. Pero, ¿qué otras marcas le siguen? Aquí te lo<br>
+            contamos.</p>
+        
+        <p>Un punto a considerar es que del total de vehículos<br>
+            vendidos en 2024, 26.767 fueron automóviles y SW,<br>
+            20.446 fueron camionetas (cerradas de carga), 29.758<br>
+            fueron pick-up y furgonetas, y 74.091 fueron SUV y<br>
+            todoterrenos.</p>
+    </header>
+    <section>
+        <div class="toyota">
+            <p><strong>1.Toyota:</strong> la marca japonesa se mantiene en el primer<br>
+                lugar con 36.641 unidades vendidas acumuladas, lo que<br>
+                significa un decrecimiento de 11,3% frente al período<br>
+                enero-diciembre del año pasado. Asimismo, logró una<br>
+                participación de mercado del 21,5%. Es decir, casi 1 de<br>
+                cada 5 vehículos que se venden en el Perú son de esta<br>
+                marca. Entre sus modelos más vendidos están el pick-<br>
+                up Hilux, así como los SUV Rush y Corolla Cross.</p>
+            
+            <div id="toyota"></div>
+            <button onclick="javascrip: mostrar();">Mostrar</button>
+            <button onclick="javascrip: ocultar();">Ocultar</button>
+
+            <script>
+                function mostrar()
+        {
+            document.getElementById("toyota").innerHTML="<img src='https://elcomercio.pe/resizer/v2/5BB5BNBVVVCRXOZ726E5QM7RQI.jpg?auth=145d19474fc56a713d0becbe92874f05ca9eb209148897b13615f409af023ca6&width=1200&quality=75&smart=true'>"
+           
+        }
+
+        function ocultar()
+        {
+            document.getElementById("toyota").innerHTML="<img style='display: none;' src='https://elcomercio.pe/resizer/v2/5BB5BNBVVVCRXOZ726E5QM7RQI.jpg?auth=145d19474fc56a713d0becbe92874f05ca9eb209148897b13615f409af023ca6&width=1200&quality=75&smart=true'>"
+
+        }
+
+            </script>
+        </div>
+    </section>
+</body>
+</html>
